@@ -33,7 +33,7 @@ export default function Footer() {
               Know exactly what you're eating with AI-powered food analysis.
             </p>
             <p className="text-sm text-nutrilens-muted">
-              Made with 🌱 in San Francisco
+              Made with 🌱 in Lebanon
             </p>
           </motion.div>
 
