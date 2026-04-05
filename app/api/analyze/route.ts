@@ -15,9 +15,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'API key not configured' }, { status: 500 })
     }
 
-    // Initialize Gemini AI with vision support
+    // Initialize Gemini AI with latest flash model
     const genAI = new GoogleGenerativeAI(apiKey)
-    const model = genAI.getGenerativeModel({ model: 'gemini-pro-vision' })
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.5-flash',
+      generationConfig: {
+        temperature: 0.4,
+        topK: 32,
+        topP: 1,
+        maxOutputTokens: 2048,
+      },
+    })
 
     const prompt = `You are a certified nutritionist AI. Analyze this food image and return ONLY a valid JSON object with this exact structure:
 {
