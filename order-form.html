@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Anfeh - Order Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- ORDER FORM -->
+  <section class="py-16 px-8 bg-gray-100 min-h-screen">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6">Place Your Order</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- CUSTOMER INFO -->
+        <div>
+          <input id="name" placeholder="Your Name" class="w-full mb-3 p-3 border rounded">
+          <input id="phone" placeholder="Phone Number" class="w-full mb-3 p-3 border rounded">
+          <input id="address" placeholder="Address" class="w-full mb-3 p-3 border rounded">
+          <textarea id="notes" placeholder="Notes" class="w-full p-3 border rounded" rows="4"></textarea>
+        </div>
+
+        <!-- ORDER ITEMS -->
+        <div class="space-y-3">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" value="Cheesy Chicken Fries - $7.00" class="w-4 h-4">
+            <span>Cheesy Chicken Fries - $7.00</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" value="Green Salad - $4.00" class="w-4 h-4">
+            <span>Green Salad - $4.00</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" value="Mozarella - $3.50" class="w-4 h-4">
+            <span>Mozarella - $3.50</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" value="Submarine - $5.00" class="w-4 h-4">
+            <span>Submarine - $5.00</span>
+          </label>
+        </div>
+
+      </div>
+
+      <button onclick="sendOrder()" class="mt-6 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl transition">
+        Place Order on WhatsApp
+      </button>
+    </div>
+  </section>
+
+  <script>
+    function sendOrder() {
+      let name = document.getElementById("name").value;
+      let phone = document.getElementById("phone").value;
+      let address = document.getElementById("address").value;
+      let notes = document.getElementById("notes").value;
+
+      let items = document.querySelectorAll("input[type=checkbox]:checked");
+
+      if (items.length === 0) {
+        alert("Please select at least one item");
+        return;
+      }
+
+      if (!name || !phone || !address) {
+        alert("Please fill in all customer details");
+        return;
+      }
+
+      let orderText = "";
+
+      items.forEach(item => {
+        orderText += "• " + item.value + "%0A";
+      });
+
+      let message =
+        "🛒 *New Order from Visit Anfeh*%0A%0A" +
+        "📋 *Customer Details:*%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Address: " + address + "%0A" +
+        "Notes: " + notes + "%0A%0A" +
+        "🍽️ *Order Items:*%0A" +
+        orderText;
+
+      let url = "https://wa.me/96181526075?text=" + message;
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>

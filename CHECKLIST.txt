@@ -1,0 +1,86 @@
+═══════════════════════════════════════════════════════════════
+    VISIT ANFEH DELIVERY - LOGO CHECKLIST
+═══════════════════════════════════════════════════════════════
+
+YOUR SCREENSHOTS HAVE THESE LOGOS - JUST CROP AND SAVE THEM!
+
+[ ] 1. Yellow DOZE logo
+    From: Your screenshot (yellow circle)
+    Save to: assets/restaurants/doze-lb/logo.png
+
+[ ] 2. قهوة زمان (Qahwet Zaman)
+    From: Your screenshot (white circle with Arabic text)
+    Save to: assets/restaurants/ahwet-zaman/logo.png
+
+[ ] 3. Blue MAYEL logo
+    From: Your screenshot (MAYEL + ORDER EAT REPEAT)
+    Save to: assets/restaurants/mayel-lb/logo.png
+
+[ ] 4. Tulip قهوة الإستاذ logo
+    From: Your screenshot (white with tulip icon)
+    Save to: assets/restaurants/ahwet-elestez/logo.png
+
+[ ] 5. Dark blue مشاوي EXPRESS
+    From: Your screenshot (dark blue circle)
+    Save to: assets/restaurants/machewee-express/logo.png
+
+[ ] 6. Light blue اهل الوز (Zaher el Oz)
+    From: Your screenshot (light blue circle)
+    Save to: assets/restaurants/zaher-eloz/logo.png
+
+[ ] 7. Black wings ANGEL'S SUSHI
+    From: Your screenshot (black and white wings)
+    Save to: assets/restaurants/angels-sushi/logo.png
+
+───────────────────────────────────────────────────────────────
+
+STILL NEED TO GET FROM INSTAGRAM:
+
+[ ] 8. Macro's Kitchen
+    From: https://www.instagram.com/macro.skitchen
+    Save to: assets/restaurants/macros-kitchen/logo.png
+
+[ ] 9. Doh on the Go
+    From: https://www.instagram.com/doh.on.the.go
+    Save to: assets/restaurants/doh-on-the-go/logo.png
+
+───────────────────────────────────────────────────────────────
+
+YOUR BUSINESS LOGOS:
+
+[ ] Visit Anfeh Delivery main logo
+    Save to: assets/logo.png
+
+[ ] Hero image with scooter
+    Save to: assets/hero-delivery.png
+
+═══════════════════════════════════════════════════════════════
+
+HOW TO CROP LOGOS:
+
+1. Open screenshot
+2. Crop just the circular logo (make it square)
+3. Save as PNG
+4. Name it "logo.png" (exactly - lowercase)
+5. Put in the correct folder
+
+═══════════════════════════════════════════════════════════════
+
+AFTER ADDING ALL LOGOS:
+
+[ ] Open index.html in browser
+[ ] Check all 9 restaurants show logos
+[ ] Click "Angels Sushi" to test ordering
+[ ] Try placing a test WhatsApp order
+[ ] Test on mobile phone
+
+═══════════════════════════════════════════════════════════════
+
+DONE! 🎉
+
+Your website is ready to take orders!
+
+All orders go to WhatsApp: 96181526075
+$1 delivery fee automatically added
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Anfeh Delivery - Your Trusted Delivery Partner</title>
+    <link rel="stylesheet" href="styles-delivery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Visit Anfeh Delivery" class="logo-img">
+                    <span class="logo-text">Visit Anfeh Delivery</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#restaurants">Restaurants</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="nav-cta">
+                    <a href="tel:+96181526075" class="phone-btn">📞 81-526075</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Visit <span class="highlight">Anfeh</span><br>
+                        <span class="delivery-text">Delivery</span>
+                    </h1>
+                    <p class="hero-subtitle">Your trusted delivery partner</p>
+                    <p class="hero-phone">📞 81-526075</p>
+                    <p class="hero-description">Fast, reliable delivery from Anfeh's finest restaurants to your doorstep</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <span class="feature-icon">🚀</span>
+                            <span>Fast Delivery</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💰</span>
+                            <span>Only $1 Delivery Fee</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⭐</span>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+                    <a href="#restaurants" class="cta-btn">Order Now</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero-delivery.png" alt="Delivery Service" class="delivery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESTAURANTS SECTION -->
+    <section id="restaurants" class="restaurants">
+        <div class="container">
+            <h2 class="section-title">Our Partner Restaurants</h2>
+            <p class="section-subtitle">Choose from Anfeh's finest dining establishments</p>
+
+            <div class="restaurant-grid">
+                <!-- Macro's Kitchen -->
+                <div class="restaurant-card" data-restaurant="macros-kitchen">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/macros-kitchen/logo.png" alt="Macro's Kitchen" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Macro's Kitchen</h3>
+                    <p class="restaurant-desc">Delicious comfort food & healthy options</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('macros-kitchen')">View Menu</button>
+                </div>
+
+                <!-- Angels Sushi -->
+                <div class="restaurant-card" data-restaurant="angels-sushi">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/angels-sushi/logo.png" alt="Angels Sushi" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Angels Sushi</h3>
+                    <p class="restaurant-desc">Fresh sushi & Japanese cuisine</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('angels-sushi')">View Menu</button>
+                </div>
+
+                <!-- Machewee Express -->
+                <div class="restaurant-card" data-restaurant="machewee-express">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/machewee-express/logo.png" alt="Machewee Express" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Machewee Express</h3>
+                    <p class="restaurant-desc">Fast food favorites</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('machewee-express')">View Menu</button>
+                </div>
+
+                <!-- Doh on the Go -->
+                <div class="restaurant-card" data-restaurant="doh-on-the-go">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/doh-on-the-go/logo.png" alt="Doh on the Go" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Doh on the Go</h3>
+                    <p class="restaurant-desc">Fresh dough & pizza</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('doh-on-the-go')">View Menu</button>
+                </div>
+
+                <!-- Doze LB -->
+                <div class="restaurant-card" data-restaurant="doze-lb">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/doze-lb/logo.png" alt="Doze LB" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Doze LB</h3>
+                    <p class="restaurant-desc">Coffee & desserts</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('doze-lb')">View Menu</button>
+                </div>
+
+                <!-- Zaher el Oz -->
+                <div class="restaurant-card" data-restaurant="zaher-eloz">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/zaher-eloz/logo.png" alt="Zaher el Oz" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Zaher el Oz</h3>
+                    <p class="restaurant-desc">Traditional Lebanese cuisine</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('zaher-eloz')">View Menu</button>
+                </div>
+
+                <!-- Mayel LB -->
+                <div class="restaurant-card" data-restaurant="mayel-lb">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/mayel-lb/logo.png" alt="Mayel LB" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Mayel LB</h3>
+                    <p class="restaurant-desc">Local favorites</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('mayel-lb')">View Menu</button>
+                </div>
+
+                <!-- Ahwet el Estez -->
+                <div class="restaurant-card" data-restaurant="ahwet-elestez">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/ahwet-elestez/logo.png" alt="Ahwet el Estez" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Ahwet el Estez</h3>
+                    <p class="restaurant-desc">Traditional cafe & snacks</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('ahwet-elestez')">View Menu</button>
+                </div>
+
+                <!-- Ahwet Zaman -->
+                <div class="restaurant-card" data-restaurant="ahwet-zaman">
+                    <div class="restaurant-logo">
+                        <img src="assets/restaurants/ahwet-zaman/logo.png" alt="Ahwet Zaman" onerror="this.src='assets/placeholder-logo.png'">
+                    </div>
+                    <h3 class="restaurant-name">Ahwet Zaman</h3>
+                    <p class="restaurant-desc">Classic cafe experience</p>
+                    <button class="view-menu-btn" onclick="openRestaurant('ahwet-zaman')">View Menu</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER MODAL -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <img id="modalRestaurantLogo" src="" alt="" class="modal-logo">
+                <h2 id="modalRestaurantName"></h2>
+            </div>
+
+            <div class="menu-section">
+                <h3>Menu</h3>
+                <div id="menuItems" class="menu-items">
+                    <!-- Menu items will be loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="order-form">
+                <h3>Your Details</h3>
+                <input type="text" id="customerName" placeholder="Your Name" required>
+                <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+                <input type="text" id="customerAddress" placeholder="Delivery Address" required>
+                <textarea id="orderNotes" placeholder="Special instructions (optional)" rows="3"></textarea>
+
+                <div class="order-summary">
+                    <div class="summary-line">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Delivery Fee:</span>
+                        <span class="delivery-fee">$1.00</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>Total:</span>
+                        <span id="total">$1.00</span>
+                    </div>
+                </div>
+
+                <button class="order-btn" onclick="sendOrder()">
+                    Send Order via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose Visit Anfeh Delivery?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🏪</div>
+                    <h3>Wide Selection</h3>
+                    <p>Access to the best restaurants in Anfeh, all in one place</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">⚡</div>
+                    <h3>Fast Service</h3>
+                    <p>Quick delivery to ensure your food arrives fresh and hot</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">💵</div>
+                    <h3>Affordable</h3>
+                    <p>Only $1 delivery fee for all orders</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📱</div>
+                    <h3>Easy Ordering</h3>
+                    <p>Simple WhatsApp ordering process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+96181526075">81-526075</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/96181526075">Message Us</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Anfeh, Lebanon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Visit Anfeh Delivery. Your trusted delivery partner.</p>
+            <p>📞 81-526075</p>
+        </div>
+    </footer>
+
+    <script src="script-delivery.js"></script>
+</body>
+</html>
