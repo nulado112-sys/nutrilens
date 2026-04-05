@@ -3,7 +3,8 @@
     "allow": [
       "Read(//private/tmp/**)",
       "Bash(curl -s \"https://generativelanguage.googleapis.com/v1beta/models?key=AIzaSyAaGZOExwTwuTLIYWrSF2VSMyO9vgXhb2k\")",
-      "Bash(npm run dev)"
+      "Bash(npm run dev)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nUpdate Gemini API to use gemini-2.5-flash model\n\n- Changed from gemini-pro-vision to gemini-2.5-flash\n- Added generation config for better results\n- Fixed API quota issues\n\n🤖 Generated with Claude Code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
