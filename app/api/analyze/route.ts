@@ -15,10 +15,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'API key not configured' }, { status: 500 })
     }
 
-    // Initialize Gemini AI with latest flash model
+    // Initialize Gemini AI with vision model
     const genAI = new GoogleGenerativeAI(apiKey)
     const model = genAI.getGenerativeModel({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-1.5-flash',
       generationConfig: {
         temperature: 0.4,
         topK: 32,

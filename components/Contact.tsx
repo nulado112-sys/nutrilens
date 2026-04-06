@@ -171,20 +171,6 @@ export default function Contact() {
           )}
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="mt-12 text-center"
-        >
-          <p className="text-nutrilens-muted">
-            Or email us directly at{' '}
-            <a href="mailto:habibnemer01@gmail.com" className="text-nutrilens-accent hover:underline">
-              habibnemer01@gmail.com
-            </a>
-          </p>
-        </motion.div>
       </div>
     </section>
   )

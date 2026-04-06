@@ -13,16 +13,15 @@ export async function POST(request: NextRequest) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Accept': 'application/json',
       },
       body: JSON.stringify({
-        access_key: process.env.WEB3FORMS_KEY || '1cf2bc76-3e99-4ed6-a4b9-ce6c09d7c826', // Free public key for testing
+        access_key: '9ef0c8a2-0cce-435e-8346-759ddcac6c6f',
         subject: `New Contact Form Message from ${name}`,
         from_name: 'NutriLens Website',
-        to: 'habibnemer01@gmail.com',
         name: name,
         email: email,
         message: message,
-        replyto: email,
       }),
     })
 
@@ -31,10 +30,14 @@ export async function POST(request: NextRequest) {
     if (data.success) {
       return NextResponse.json({ success: true, message: 'Email sent successfully' })
     } else {
-      throw new Error('Failed to send email')
+      console.error('Web3Forms error:', data)
+      throw new Error(data.message || 'Failed to send email')
     }
   } catch (error) {
     console.error('Contact form error:', error)
-    return NextResponse.json({ error: 'Failed to send message' }, { status: 500 })
+    return NextResponse.json({
+      error: 'Failed to send message. Please try again later.',
+      details: error instanceof Error ? error.message : 'Unknown error'
+    }, { status: 500 })
   }
 }
