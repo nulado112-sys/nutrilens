@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
     // Try to get brand/product name from OCR text
     if (texts.length > 0) {
       const detectedText = texts[0].description
-      const lines = detectedText.split('\n').filter(line => line.trim().length > 2)
+      const lines = detectedText.split('\n').filter((line: string) => line.trim().length > 2)
       if (lines.length > 0) {
         brandName = lines[0].trim()
         foodName = lines.length > 1 ? lines[1].trim() : lines[0].trim()
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
 
     // Get food type from labels
     let foodType = 'snack'
-    const foodLabels = labels.filter(l =>
+    const foodLabels = labels.filter((l: any) =>
       ['food', 'chocolate', 'candy', 'snack', 'dessert', 'bar', 'confectionery'].includes(l.description.toLowerCase())
     )
     if (foodLabels.length > 0) {
