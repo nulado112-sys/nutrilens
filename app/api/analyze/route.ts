@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     // Initialize Gemini AI with vision model
     const genAI = new GoogleGenerativeAI(apiKey)
     const model = genAI.getGenerativeModel({
-      model: 'gemini-pro-vision',
+      model: 'gemini-2.0-flash',
       generationConfig: {
         temperature: 0.4,
         topK: 32,
